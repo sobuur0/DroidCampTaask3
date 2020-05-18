@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailsActivity">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="307dp"
+        android:layout_height="225dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="46dp"
+        android:src="@drawable/sobuur"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/newName"
+        android:layout_width="169dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="185dp"
+        android:layout_marginBottom="383dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="309dp"
+        android:layout_height="182dp"
+        android:layout_marginTop="56dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:text="My name is abdul-sobuur and i really love developing android applications. Although i am still a begineer, i hope to get to a an entry level developer by the end of this year towards the starting of next year. And one more thing, i used java for this project."
+        app:layout_constraintTop_toBottomOf="@+id/newName"
+        tools:layout_editor_absoluteX="61dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="123dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="32dp"
+        android:text="SAY HELLO!"
+        app:layout_constraintTop_toBottomOf="@+id/editText"
+        tools:layout_editor_absoluteX="135dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
